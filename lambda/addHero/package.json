@@ -1,0 +1,15 @@
+{
+  "name": "get-heroes-lambda-function",
+  "version": "1.0.0",
+  "description": "Get heroes function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Imran Sayyed",
+  "license": "MIT",
+  "os" : [ "darwin", "linux" ],
+  "dependencies": {
+    "mongodb": "^2.2.31"
+  }
+}

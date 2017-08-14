@@ -1,0 +1,15 @@
+{
+  "name": "authorizor-lambda-function",
+  "version": "1.0.0",
+  "description": "Authorizor function for the hero app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Imran Sayyed",
+  "license": "MIT",
+  "os" : [ "darwin", "linux" ],
+  "dependencies": {
+    "jsonwebtoken": "^7.4.2"
+  }
+}

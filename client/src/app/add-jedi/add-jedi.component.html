@@ -1,0 +1,47 @@
+<div class="add-form-container">
+
+  <div class="ui icon message" *ngIf="newJedi">
+    <i class="nothced check green icon"></i>
+    <i class="close icon" (click)="newJedi = null"></i>
+    <div class="content">
+      <div class="header">New Jedi Added</div>
+      <p>Name : {{newJedi.name}}</p>
+    </div>
+  </div>
+
+
+  <form class="ui big form" #contactForm="ngForm" (submit)="onSubmit(contactForm)" [class.loading]="loading">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Jedi Name" name="name" ngModel/>
+      </div>
+
+      <div class="field">
+        <label>Rank</label>
+        <input type="text" placeholder="Rank" name="rank" ngModel/>
+      </div>
+
+      <div class="field">
+        <label>Trained By</label>
+        <input type="text" placeholder="Trained By" name="trainedBy" ngModel/>
+      </div>
+
+      <div class="field">
+        <label>Species</label>
+        <input type="text" placeholder="Species" name="species" ngModel/>
+      </div>
+
+      <div class="field">
+        <label>Bio</label>
+        <textarea rows="4" cols="50" type="text" placeholder="Bio" name="bio" ngModel></textarea>
+      </div>
+
+      <div class="field">
+        <label>Photo Url</label>
+        <input type="text" placeholder="http://link-to-photo" name="photo" ngModel/>
+      </div>
+
+      <button type="submit" class="ui submit large grey button right floated">Submit</button>
+
+  </form>
+</div>

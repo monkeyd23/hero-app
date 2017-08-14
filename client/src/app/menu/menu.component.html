@@ -1,0 +1,21 @@
+<div class="ui menu header">
+  <div class="ui container">
+    <div class="item">
+      <a [routerLink]="['/jedis']" aria-label="Jedis">
+        <i class="icon users large blue"></i>
+      </a>
+    </div>
+    <div class="header item">
+      <h1>Jedi Pedia</h1>
+    </div>
+    <div class="item" *ngIf="authService.isLoggedIn()">
+      <button [routerLink]="['/new']" class="ui basic button">
+        <i class="add user icon" aria-hidden="true"></i>
+        Add Jedi
+      </button>
+    </div>
+    <div class="right menu" *ngIf="authService.isLoggedIn()">
+      <button class="ui primary button logout" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</div>
